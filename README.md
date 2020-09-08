@@ -9,24 +9,24 @@ write mathematical expressions.  Each operator is written _after_  its operands.
 For example, the standard (infix) expression...
 
 ```
-7 - 4
+5 - 4
 ```
 becomes:
 
 ```
-7 4 -
+5 4 -
 ```
 
 And the more complicated equation...
 
 ```
-((1 + 2) * (7 - 3)) ^ 2
+((3 + 12) * (5 - 2)) ^ 3
 ```
 
 ...would become:
 
 ```
-1 2 + 7 3 - * 2 ^
+3 12 + 5 2 - * 3 ^
 ```
 
 Reverse Polish Notation is much easier for computers to work with (no
@@ -87,8 +87,8 @@ This is how it should look like:
 alvintu@Alvins-Laptop:/mnt/c/Users/Alvin Tu/Documents/cs24/m20/calculator$ ./calc
 hello
 Unknown token.
-7 4 -
-= 3
+5 4 -
+= 1
 1 2 + 7 3 - * 2 ^
 = 144
 ```
