@@ -50,10 +50,9 @@ have been processed.  This is the final value of the input expression.
 ## The Stack
 
 The  `Stack.h`  file describes an  abstract  Stack  data structure.  I implemented a
-concrete Stack (instead of using one from the C++ standard library) in  
-`MyStack.h` and `MyStack.cpp` that shares all of the functions that the standard stack does:
-clear the stack, check if the stack is empty, push items onto the stack, pop the first item 
-on the stack, get the top item, and print what's on the stack. 
+concrete Stack (instead of using one from the C++ standard library) in `MyStack.h` and `MyStack.cpp` that 
+shares all of the functions that the standard stack does: clear the stack, check if the stack is empty, 
+push items onto the stack, pop the first item on the stack, get the top item, and print what's on the stack. 
 
 ## The Calculator
 
