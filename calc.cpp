@@ -21,10 +21,13 @@ bool isOperator(const std::string& input) {
 int main() {
   MyStack* stack = new MyStack();
   std::string line;
+
+  // read in inputs
   while(std::getline(std::cin, line)) {
     std::stringstream ss;
     ss << line;
 
+    // initialize a bunch of counting variables
 		std::string tmp;
     double found;
     int numCount = 0;
@@ -41,16 +44,6 @@ int main() {
     int l = line.length();
 
     while(ss >> tmp) {
-      // std::cout << tmp << std::endl;
-      
-      // inputting nothing/empty space
-      /*
-      if(tmp == "") { 
-        std::cerr << "No expression." << std::endl;
-        break;
-      }
-      */
-
       // test if input is a double with trailing char 
       for (int j = 0; j < l; j++) {
         if(isalpha(line[j])) {
@@ -122,6 +115,7 @@ int main() {
           } 
         }
 
+        // check the operation and pop out of stack
         if(!stack->is_empty() && numCount >= 2) {
           double right = stack->pop();
           double left = stack->pop();
@@ -144,7 +138,7 @@ int main() {
             if(right == 0) {
               zero = true;
               stack->clear();
-              std::cerr << "Division by zero." << std::endl;
+              std::cerr << "Division by zero." << std::endl;  // error if dividing by 0
               break;
             } else {
               stack->push(left / right);
@@ -159,7 +153,7 @@ int main() {
             if(right == 0) {
               zero = true;
               stack->clear();
-              std::cerr << "Division by zero." << std::endl;
+              std::cerr << "Division by zero." << std::endl;  // error if dividing by 0
               break;
             } else {           
               stack->push(fmod(left, right));
@@ -180,6 +174,7 @@ int main() {
 
     }
 
+    // check errors and continue if there has been one
     if(zero) {
       continue;
     }

@@ -16,10 +16,7 @@ class MyStack: public Stack {
   Node *head;
 
 public:
-  // TODO: Constructor & Destructor
-
   MyStack();
-  // Required Stack functions.
   // See Stack.h for descriptions.
   void   clear();
   bool   is_empty() const;
@@ -28,7 +25,6 @@ public:
   double top() const;
   void print() const;
   ~MyStack();
-  // TODO: Add helper functions if necessary.
 };
 
 #endif
