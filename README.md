@@ -3,7 +3,7 @@ by: Alvin Tu
 
 ## Overview
 
-In this assignment I implemented a simple calculator that understands Reverse
+In this project I implemented a simple calculator that understands Reverse
 Polish Notation (postfix notation). This is an alternative way to
 write mathematical expressions.  Each operator is written _after_  its operands.
 For example, the standard (infix) expression...
