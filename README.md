@@ -84,7 +84,7 @@ pressing  `Ctrl` + `D` on Linux and Mac,  or by pressing  `Ctrl` + `Z`  and then
 This is how it should look like: 
 
 ```
-alvintu@Alvins-Laptop:/mnt/c/Users/Alvin Tu/Documents/cs24/m20/calculator$ ./calc
+[alvintu@Alvins-Laptop]$ ./calc
 hello
 Unknown token.
 5 4 -
